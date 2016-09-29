@@ -4,6 +4,7 @@ use std::sync::*;
 
 use zero::Pod;
 
+/// A struct called Foo.
 struct Foo;
 
 unsafe impl Pod for Foo {}
