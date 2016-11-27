@@ -1,4 +1,8 @@
+#![feature(proc_macro)]
+
 extern crate zero;
+#[macro_use]
+extern crate derive_new;
 
 use std::sync::*;
 
@@ -10,6 +14,30 @@ struct Foo;
 unsafe impl Pod for Foo {}
  
 mod sub_mod;
+
+/// Some module
+mod m1 {
+    /// Some struct
+    ///
+    /// Lots more details
+    /// Yes, more detail.
+    struct S {
+        /// A field of struct `S`.
+        f: String,
+    }
+}
+
+//#[derive(new)]
+struct Thing {
+    f1: Vec<String>,
+    f2: Foo,
+    f3: Pod,
+    f4: String,
+}
+
+trait TFoo {}
+
+impl TFoo for Thing {}
 
 fn main() {
     let mut bar = 42;

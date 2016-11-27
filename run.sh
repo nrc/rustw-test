@@ -1,8 +1,11 @@
+export RUSTC="/home/ncameron/rust2/x86_64-unknown-linux-gnu/stage2/bin/rustc"
 cd ..
-#./cp_static.sh
+./build_templates.sh
+./cp_static.sh
 cargo build
 cd test
 #cargo clean
+RUST_LOG=info
 ../target/debug/rustw
 
 #../target/debug/rustw -f foo
