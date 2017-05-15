@@ -5,4 +5,4 @@ authors = ["Nick Cameron <ncameron@mozilla.com>"]
 
 [dependencies]
 zero = { path = "/home/ncameron/dwarf/zero" }
-derive-new = "0.2"
+derive-new = "0.3"
