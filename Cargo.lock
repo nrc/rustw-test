@@ -1,11 +1,3 @@
-[root]
-name = "hello"
-version = "0.1.0"
-dependencies = [
- "derive-new 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "zero 0.1.2",
-]
-
 [[package]]
 name = "derive-new"
 version = "0.3.0"
@@ -13,6 +5,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "quote 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "syn 0.8.7 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "hello"
+version = "0.1.0"
+dependencies = [
+ "derive-new 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "zero 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -37,9 +37,11 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "zero"
 version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
 "checksum derive-new 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "41be6ca3b99e0c0483fb2389685448f650459c3ecbe4e18d7705d8010ec4ab8e"
 "checksum quote 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "4c5cf478fe1006dbcc72567121d23dbdae5f1632386068c5c86ff4f645628504"
 "checksum syn 0.8.7 (registry+https://github.com/rust-lang/crates.io-index)" = "6ae6fb0dcc9bd85f89a1a4adc0df2fd90c90c98849d61433983dd7a9df6363f7"
 "checksum unicode-xid 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)" = "36dff09cafb4ec7c8cf0023eb0b686cb6ce65499116a12201c9e11840ca01beb"
+"checksum zero 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "5f1bc8a6b2005884962297587045002d8cfb8dcec9db332f4ca216ddc5de82c5"

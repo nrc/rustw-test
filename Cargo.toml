@@ -4,5 +4,5 @@ version = "0.1.0"
 authors = ["Nick Cameron <ncameron@mozilla.com>"]
 
 [dependencies]
-zero = { path = "/home/ncameron/dwarf/zero" }
+zero = "0.1"
 derive-new = "0.3"

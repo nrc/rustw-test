@@ -1,10 +1,6 @@
-export LD_LIBRARY_PATH=$(rustc --print sysroot)/lib:$LD_LIBRARY_PATH
+export DYLD_LIBRARY_PATH=$(rustc --print sysroot)/lib:$DYLD_LIBRARY_PATH
 #export RUST_LOG=rls_analysis=info
 #export RUSTC="/home/ncameron/rust2/x86_64-unknown-linux-gnu/stage2/bin/rustc"
-cd ..
-./cp_static.sh
-#cargo build
-cd test
 #cargo clean
 #export RUST_LOG=info
 #export RUST_BACKTRACE=1
