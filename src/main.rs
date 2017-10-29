@@ -12,6 +12,9 @@ use zero::Pod;
 struct Foo;
 
 unsafe impl Pod for Foo {}
+unsafe impl Pod for Thing {
+
+}
  
 mod sub_mod;
 
@@ -31,7 +34,7 @@ mod m1 {
 struct Thing {
     f1: Vec<String>,
     f2: Foo,
-    f3: Pod,
+    // f3: Pod,
     f4: String,
 }
 
@@ -40,18 +43,18 @@ trait TFoo {}
 impl TFoo for Thing {}
 
 fn main() {
-    let mut bar = 42;
-    let f = &mut bar;
-    let g = &mut bar;
-    let foo = 42;
-    let _ = foo + 2;
-    println!("Hello world! {}", foo);
+    // let mut bar = 42;
+    // let f = &mut bar;
+    // let g = &mut bar;
+    // let foo = 42;
+    // let _ = foo + 2;
+    // println!("Hello world! {}", foo);
 
-    let a = Arc::new(42);
-    let b = Once::new();
+    // let a = Arc::new(42);
+    // let b = Once::new();
 
-    let c = sub_mod::foo();
+    // let c = sub_mod::foo();
 
-    fn bar() {
-    }
+    // fn bar() {
+    // }
 }
